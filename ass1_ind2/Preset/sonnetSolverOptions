@@ -1,0 +1,11 @@
+(solveroptions) (fsoportwidthmultiplier) 4.0
+(solveroptions) (solverchoice) "Fast"
+(solveroptions) (fsoconvergencetolerance) 0.001
+(solveroptions) (fsoisamomcap) No
+(solveroptions) (fsonumberofadaptive) "8"
+(solveroptions) (fsonumberoffreqpoints) "75"
+(solveroptions) (fsouselinevias) Yes
+(solveroptions) (fsoedgemesh) "10"
+(solveroptions) (fsomeshsizecalc) "Automatic"
+(solveroptions) (fsoarcsegment) "20"
+(solveroptions) (fsomeshsize) "100"

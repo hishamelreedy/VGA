@@ -1,0 +1,25 @@
+(subsectioningoptions) (setxmin) No
+(subsectioningoptions) (setymin) No
+(subsectioningoptions) (setconmeshmaxsublength) No
+(subsectioningoptions) (setmaxsubsize) No
+(subsectioningoptions) (setestepseff) No
+(subsectioningoptions) (xmaxvalue) "100"
+(subsectioningoptions) (ymaxvalue) "100"
+(subsectioningoptions) (estepseffvalue) "Auto"
+(subsectioningoptions) (setpolyedgecheck) No
+(subsectioningoptions) (xminvalue) "1"
+(subsectioningoptions) (yminvalue) "1"
+(subsectioningoptions) (defaultviafilltype) "Vertices"
+(subsectioningoptions) (defaultmetalfilltype) "Conformal"
+(subsectioningoptions) (setxmax) No
+(subsectioningoptions) (setymax) No
+(subsectioningoptions) (autoheightvias) Yes
+(subsectioningoptions) (polyedgecheckselection) "Tech. Layers"
+(subsectioningoptions) (subfreqbasedby) "Present and Previous Analyses"
+(subsectioningoptions) (setuseedgemesh) No
+(subsectioningoptions) (maxsubsizevalue) "20"
+(subsectioningoptions) (polyedgecheckvalue) "1"
+(subsectioningoptions) (useedgemesh) "Yes"
+(subsectioningoptions) (allviafilltype) "<off>"
+(subsectioningoptions) (allmetalfilltype) "<off>"
+(subsectioningoptions) (analysiscontrol) "Fine/Edge Meshing"

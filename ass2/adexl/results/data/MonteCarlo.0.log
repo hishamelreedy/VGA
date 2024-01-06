@@ -1,0 +1,42 @@
+Starting Monte Carlo Sampling...
+
+Current time: Fri Nov 24 14:55:17 2023 
+MonteCarlo.0
+Number of points completed: 200
+Number of simulation errors: 0
+MonteCarlo.0 completed. 
+Current time: Fri Nov 24 14:56:00 2023 
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 3
+cuaic:ass2:1	Nominal - 
+	(VF("/vcomp") / IF("/M3/D")):	Yield	0%
+		Min 0	Max 0	Mean 0	Number of errors 0
+cuaic:ass2:1	Nominal - 
+	IDC("/M3/D"):	Yield	100%
+		Min 0.000391976	Max 0.000405071	Mean 0.000399167	Number of errors 0
+cuaic:ass2:1	Nominal - 
+	ymax(mag((VF("/vcomp") / IF("/M3/D")))):	Yield	100%
+		Min 553808	Max 570014	Mean 561223	Number of errors 0
+
+cuaic:ass2:1
+	Overall Yield	100%	Number of points passed	200	Total number of points	200
+
+Estimated yield = 100% (200/200), 0 errors
+Estimated yield (No opregions) = 100% (200/200)
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 3
+cuaic:ass2:1	Nominal - 
+	(VF("/vcomp") / IF("/M3/D")):	Yield	0%
+		Min 0	Max 0	Mean 0	Number of errors 0
+cuaic:ass2:1	Nominal - 
+	IDC("/M3/D"):	Yield	100%
+		Min 0.000391976	Max 0.000405071	Mean 0.000399167	Number of errors 0
+cuaic:ass2:1	Nominal - 
+	ymax(mag((VF("/vcomp") / IF("/M3/D")))):	Yield	100%
+		Min 553808	Max 570014	Mean 561223	Number of errors 0
+
+cuaic:ass2:1
+	Overall Yield	100%	Number of points passed	200	Total number of points	200
+
+Estimated yield = 100% (200/200), 0 errors
+Estimated yield (No opregions) = 100% (200/200)

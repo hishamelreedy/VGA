@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Oct 21 14:41:07 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass1_pmos:1	corner	Nominal - 
+Design parameters: 
+	vds		200m
+
+Interactive.3
+Number of points completed: 7
+Number of simulation errors: 0
+Interactive.3 completed. 
+Current time: Sat Oct 21 14:41:26 2023 

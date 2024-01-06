@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Oct 20 15:15:13 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass1_res:1	corner	FF - 
+	cuaic:ass1_res:1	corner	SS - 
+	cuaic:ass1_res:1	corner	Nominal - 
+Design parameters: 
+	PC		"tt_res"
+
+Interactive.14
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.14 completed. 
+Current time: Fri Oct 20 15:15:19 2023 

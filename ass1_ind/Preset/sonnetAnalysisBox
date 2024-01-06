@@ -1,0 +1,10 @@
+(analysisbox) (bottommetal) "Lossless"
+(analysisbox) (xcellsize) 1
+(analysisbox) (ycellsize) 1
+(analysisbox) (marginchoice) "% circuit size"
+(analysisbox) (bottommarginvalue) 100
+(analysisbox) (defineby) "Cell Size"
+(analysisbox) (leftmarginvalue) 100
+(analysisbox) (topmetal) "Lossless"
+(analysisbox) (topmarginvalue) 100
+(analysisbox) (rightmarginvalue) 100

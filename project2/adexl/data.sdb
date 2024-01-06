@@ -1,0 +1,1934 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">cuaic:project2:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>project2</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>cuaic:project2:1_active</value>
+					</option>
+				</tooloptions>
+				<outputs>
+					<output>(VF("/vop") - VF("/von"))
+						<evalType>point</evalType>
+					</output>
+					<output>phaseMargin((VF("/vop1") - VF("/von1")))
+						<evalType>point</evalType>
+					</output>
+					<output>(VF("/vop1") - VF("/von1"))
+						<evalType>point</evalType>
+					</output>
+					<output>dB20((VF("/vop1") - VF("/von1")))
+						<evalType>point</evalType>
+					</output>
+					<output>dB20((VF("/vop") - VF("/von")))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<origoptions>
+					<option>cell
+						<value>project2</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">cuaic:project2:2
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>project2</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>cuaic:project2:2_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>project2</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<disabledtests>
+			<test>cuaic:project2:2</test>
+		</disabledtests>
+		<vars>
+			<var enabled="0">L
+				<value>0.5u:0.2u:2u</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+					<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">VDS
+				<value>0.4</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+					<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">VGS
+				<value></value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+					<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">W
+				<value>100u:20u:200u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+					<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">vb
+				<value>250m:50m:500m</value>
+				<dependentTests>
+					<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<allvarsdisabled>0</allvarsdisabled>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.199
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.199</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.199</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:18:22 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.199.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.199.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_191823046</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.199</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.199</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.199.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.199.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.200
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.200</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.200</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:20:47 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.200.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.200.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192047210</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.200</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.200</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.200.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.200.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.201
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.201</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.201</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:22:43 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.201.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.201.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192243915</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.201</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.201</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.201.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.201.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.202
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.202</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.202</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:23:30 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.202.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.202.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192330958</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.202</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.202</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.202.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.202.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.203
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.203</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.203</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:24:21 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.203.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.203.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192421367</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.203</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.203</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.203.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.203.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.204
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.204</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.204</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:28:32 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.204.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.204.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192832311</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.204</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.204</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.204.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.204.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.205
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.205</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.205</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:30:38 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.205.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.205.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_193038389</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.205</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.205</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.205.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.205.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.206
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.206</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.206</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:32:33 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.206.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.206.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_193233642</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.206</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.206</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.206.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.206.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.207
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.207</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.207</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:35:01 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.207.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.207.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_193501731</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.207</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.207</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.207.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.207.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.208
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:project2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:1_none_Interactive.208</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>(VF("/vop") - VF("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseMargin((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>(VF("/vop1") - VF("/von1"))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop1") - VF("/von1")))
+								<evalType>point</evalType>
+							</output>
+							<output>dB20((VF("/vop") - VF("/von")))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:project2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:project2:2_none_Interactive.208</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>project2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:project2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>0.5u:0.2u:2u</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VGS
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W
+						<value>100u:20u:200u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:project2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vb
+						<value>250m:50m:500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:project2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<allvarsdisabled>0</allvarsdisabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan  5 19:36:06 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.208.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.208.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_193606431</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/project2/adexl/results/data/Interactive.208</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/project2/adexl/results/data/Interactive.208</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/project2/adexl/results/data/Interactive.208.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.208.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

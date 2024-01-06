@@ -1,0 +1,43 @@
+(modeloptions) (layoutsymboltype) "Outline"
+(modeloptions) (symbolsize) "min pin dist."
+(modeloptions) (addpintexttosymbol) "Yes"
+(modeloptions) (nclineincludeadaptive) Yes
+(modeloptions) (symboltype) "Layout look-alike"
+(modeloptions) (tstonesparamincludeadaptivedata) "Yes"
+(modeloptions) (spectrebbspiceaddstopfreq) "3*TopFreq"
+(modeloptions) (spectrebbspicegeneratedifferentfiles) No
+(modeloptions) (imegeneratepredicted) Yes
+(modeloptions) (calculation) "Both (2) & (3) Models"
+(modeloptions) (imehighprecision) No
+(modeloptions) (spectresparamdatatype) "De-embedded"
+(modeloptions) (nclinecalcmodel) No
+(modeloptions) (spectrebbspiceoverrideadditionalfrequencies) No
+(modeloptions) (imeoptbandchoice) "Automatic"
+(modeloptions) (imecalcspectremodel) Yes
+(modeloptions) (nclinedatatype) "De-embedded"
+(modeloptions) (imedatatype) "De-embedded"
+(modeloptions) (spectrebbspicemaxtotalorder) "40"
+(modeloptions) (tstonesparamcomplex) "Mag-Angle"
+(modeloptions) (spectresparamparameter) "S-Param"
+(modeloptions) (imemodeltopology) "Center Tapped"
+(modeloptions) (spectrebbspicedatatype) "De-embedded"
+(modeloptions) (spectrebbspiceaddstartfreq) "TopFreq"
+(modeloptions) (bbspiceerrorthresh) "1"
+(modeloptions) (imeoptbandstopfreq) "10"
+(modeloptions) (imeoptbandstartfreq) "1"
+(modeloptions) (spectresparamhighprecision) "No"
+(modeloptions) (spectrebbspicegeneratepredicted) Yes
+(modeloptions) (spectrebbspiceaddstepfreq) "Last Step"
+(modeloptions) (nclinemodelformat) "Spectre"
+(modeloptions) (tstonesparamdatatype) "De-embedded"
+(modeloptions) (tstonesparamhighprecision) "No"
+(modeloptions) (spectresparamincludeadaptivedata) "Yes"
+(modeloptions) (spectrebbspiceadddcpoint) "No"
+(modeloptions) (imeincludeadaptive) Yes
+(modeloptions) (addreferencepintosymbol) "No"
+(modeloptions) (symbolsizevalue) "1"
+(modeloptions) (imemodelformat) "Spectre"
+(modeloptions) (nclinehighprecision) No
+(modeloptions) (spectresparamcomplex) "Mag-Angle"
+(modeloptions) (tstonesparamparameter) "S-Param"
+(modeloptions) (bbspicestabilityfactor) "0.001"

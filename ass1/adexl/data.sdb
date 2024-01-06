@@ -1,0 +1,1310 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>cuaic:ass1:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>ass1</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>cuaic:ass1:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>ass1</value>
+					</option>
+					<option>lib
+						<value>cuaic</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="1">L
+				<value>Lmin,4*Lmin</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">Lmin
+				<value>60n</value>
+				<dependentTests>
+					<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">W_L
+				<value></value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">L2
+				<value>L2min,4*L2min</value>
+				<dependentTests>
+					<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">L2min
+				<value>280n</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.28
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.28</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 13:07:14 2023</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.28.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_130714100</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.28</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.28</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.28.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+					<var>L2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.29
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.29</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 13:09:33 2023</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.29.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_130933699</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.29</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.29</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.29.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.30
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.30</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 14:50:59 2023</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.30.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_145059693</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.30</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.30</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.30.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.31
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.31</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 14:52:37 2023</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.31.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_145237406</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.31</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.31</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.31.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.32
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.32</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 14:53:22 2023</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.32.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_145322892</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.32</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.32</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.32.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.33
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.33</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 16:32:59 2023
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.33.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_163259959</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.33</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.33</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.33.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.34
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.34</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 16:36:05 2023
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.34.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_163605873</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.34</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.34</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.34.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.35
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.35</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 16:37:15 2023
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.35.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_163715961</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.35</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.35</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.35.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.35.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.36
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.36</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 16:37:51 2023
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.36.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_163751380</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.36</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.36</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.36.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.36.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.37
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:ass1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:ass1:1_none_Interactive.37</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ass1</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="1">L
+						<value>Lmin,4*Lmin</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">Lmin
+						<value>60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">W_L
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2
+						<value>L2min,4*L2min</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">L2min
+						<value>280n</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:ass1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Oct 28 16:39:18 2023
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.37.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_163918218</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/ass1/adexl/results/data/Interactive.37</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/ass1/adexl/results/data/Interactive.37</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/ass1/adexl/results/data/Interactive.37.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>L
+						<value>Lmin</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

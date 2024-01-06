@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Jan  5 19:23:32 2024 
+Best design point: 1
+Design specs: 
+	cuaic:project2:1	corner	Nominal - 
+	bandwidth((VF("/vop") - VF("/von")) 3 "low")		7.567M
+	phaseMargin((VF("/vop") - VF("/von")))		-138.4
+	phaseMargin((VF("/vop1") - VF("/von1")))		83.15
+Design parameters: 
+
+Interactive.202
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.202 completed. 
+Current time: Fri Jan  5 19:23:39 2024 

@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Nov 24 14:52:30 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass2:1	corner	Nominal - 
+	ymax(mag((VF("/vcomp") / IF("/M3/D"))))		63.44k
+	IDC("/M3/D")		398.7u
+Design parameters: 
+	Sigma		3
+
+Interactive.57
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.57 completed. 
+Current time: Fri Nov 24 14:52:33 2023 

@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Oct 27 15:29:36 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass1_var:1	corner	SS - 
+	pv("C0.cgate" "cap")		Error	No
+	cuaic:ass1_var:1	corner	FF - 
+	pv("C0.cgate" "cap")		Error	No
+	cuaic:ass1_var:1	corner	Nominal - 
+	pv("C0.cgate" "cap")		Error	No
+Design parameters: 
+	corner		"tt_mim"
+	corner1		"tt_mos_cap"
+	corner2		"tt_rtmom"
+
+Interactive.19
+Number of points completed: 1
+Number of simulation errors: 3
+Interactive.19 completed. 
+Current time: Fri Oct 27 15:29:51 2023 

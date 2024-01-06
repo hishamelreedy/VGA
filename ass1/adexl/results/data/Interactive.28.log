@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Oct 28 13:07:14 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass1:1	corner	Nominal - 
+	M3:vth (Design_Point=1.00e+00)		Error	No
+Design parameters: 
+	L		Lmin
+	L2		L2min
+
+Interactive.28
+Number of points completed: 4
+Number of simulation errors: 4
+Interactive.28 completed. 
+Current time: Sat Oct 28 13:07:22 2023 

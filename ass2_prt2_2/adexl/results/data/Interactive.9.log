@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Dec  2 14:04:22 2023 
+Best design point: 1
+Design specs: 
+	cuaic:ass2_prt2_2:1	corner	Nominal - 
+Design parameters: 
+	vb		200m
+	M		2
+
+Interactive.9
+Number of points completed: 9
+Number of simulation errors: 0
+Interactive.9 completed. 
+Current time: Sat Dec  2 14:04:51 2023 
