@@ -11,7 +11,7 @@
 				<icontype></icontype>
 			</extension>
 		</extensions>
-		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<currentmode>Monte Carlo Sampling</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
 			<test>cuaic:BGR:1
@@ -50,6 +50,20 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+						<evalType>point</evalType>
+					</output>
+					<output>average(mag(VS("/VREF")))
+						<evalType>point</evalType>
+					</output>
+					<output>VDC("/VREF")
+						<evalType>point</evalType>
+					</output>
+					<output>average(VDC("/VREF"))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -71,10 +85,85 @@
 					<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 				</dependentTests>
 			</var>
+			<var enabled="0">corner
+				<value>"tt","ss","ff","sf","fs"</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">sigma
+				<value>5</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+				</dependentTests>
+			</var>
 		</vars>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>dutsummary
+					<dutinstance>row0
+						<test>cuaic:BGR:1</test>
+						<type>Subcircuit</type>
+						<LCV>nch_mac</LCV>
+						<Instances>/M9, /M11, /M12, /M17</Instances>
+					</dutinstance>
+					<dutinstance>row1
+						<test>cuaic:BGR:1</test>
+						<type>Subcircuit</type>
+						<LCV>pch_mac</LCV>
+						<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+					</dutinstance>
+				</runoption>
+				<runoption>ignoreflag
+					<value>0</value>
+				</runoption>
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>400</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>1</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>0</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>yes</value>
+				</runoption>
+			</mode>
+		</runoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.177
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.4
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -86,7 +175,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -108,7 +197,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.177</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.4</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -125,6 +214,17 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -146,25 +246,100 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pnp5</LCV>
+								<Instances>/Q2, /Q0</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:36:33 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.177.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.177.rdb</simresults>
+			<timestamp>Sat Jan 6 21:57:34 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.4.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_193633964</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.177</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.177</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_215734717</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.4</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.177.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.177.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.4.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.178
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.5
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -176,7 +351,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -198,7 +373,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.178</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.5</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -215,6 +390,17 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -236,25 +422,94 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:36:51 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.178.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.178.rdb</simresults>
+			<timestamp>Sat Jan 6 21:58:00 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.5.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_193651354</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.178</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.178</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_215800943</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.5</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.178.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.178.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.5.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.179
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.195
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -288,7 +543,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.179</value>
+								<value>cuaic:BGR:1_none_Interactive.195</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -305,6 +560,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -326,25 +595,94 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:40:01 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.179.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.179.rdb</simresults>
+			<timestamp>Sat Jan 6 21:58:53 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.195.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.195.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_194001305</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.179</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.179</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_215853215</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.195</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.195</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.179.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.179.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.195.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.195.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.180
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.196
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -378,7 +716,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.180</value>
+								<value>cuaic:BGR:1_none_Interactive.196</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -395,6 +733,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -416,25 +768,94 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:42:54 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.180.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.180.rdb</simresults>
+			<timestamp>Sat Jan 6 21:59:16 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.196.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.196.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_194254507</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.180</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.180</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_215916683</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.196</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.196</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.180.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.180.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.196.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.196.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.181
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.6
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -446,7 +867,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -468,7 +889,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.181</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.6</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -485,6 +906,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -506,25 +941,94 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:45:15 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.181.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.181.rdb</simresults>
+			<timestamp>Sat Jan 6 21:59:34 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.6.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_194515662</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.181</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.181</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_215934892</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.6</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.181.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.181.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.6.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.182
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.7
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -536,7 +1040,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -558,7 +1062,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.182</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.7</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -575,6 +1079,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -596,25 +1114,94 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:45:32 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.182.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.182.rdb</simresults>
+			<timestamp>Sat Jan 6 22:01:41 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.7.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_194532085</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.182</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.182</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_220141838</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.7</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.182.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.182.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.7.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.183
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.8
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -626,7 +1213,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -648,7 +1235,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.183</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.8</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -665,6 +1252,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -686,25 +1287,100 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">sigma
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan 6 19:48:10 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.183.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.183.rdb</simresults>
+			<timestamp>Sat Jan 6 22:03:20 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.8.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_194810871</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.183</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.183</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_220320899</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.8</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.183.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.183.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.8.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.184
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.9
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -716,7 +1392,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -738,7 +1414,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.184</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.9</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -755,6 +1431,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -776,116 +1466,101 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
-				</vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan 6 20:25:08 2024</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.184.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.184.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_202508314</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.184</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.184</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.184.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.184.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.185
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:BGR:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>BGR</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:BGR:1_none_Interactive.185</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>BGR</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<vars>
-					<var enabled="0">vdd
-						<value></value>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">sigma
+						<value>5</value>
 						<dependentTests>
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 20:33:46 2024
+			<timestamp>Sat Jan  6 22:06:48 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.185.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.185.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.9.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_203346487</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.185</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.185</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_220648449</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.9</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.185.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.185.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.9.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.186
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.10
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -897,7 +1572,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -919,7 +1594,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.186</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.10</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -936,6 +1611,20 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
@@ -957,22 +1646,277 @@
 							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">sigma
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 20:34:13 2024
+			<timestamp>Sat Jan  6 22:09:52 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.186.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.186.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.10.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_203414006</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.186</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.186</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_220952478</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.10</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.186.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.186.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:BGR:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>BGR</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:BGR:1_none_MonteCarlo.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>BGR</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars>
+					<var enabled="0">vdd
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">sigma
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12, /M17</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>400</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Jan  6 22:11:03 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_221103266</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.11.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

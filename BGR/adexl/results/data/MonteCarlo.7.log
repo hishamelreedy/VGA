@@ -1,0 +1,52 @@
+Starting Monte Carlo Sampling...
+
+Current time: Sat Jan  6 22:01:42 2024 
+MonteCarlo.7
+Number of points completed: 200
+Number of simulation errors: 0
+MonteCarlo.7 completed. 
+Current time: Sat Jan  6 22:02:23 2024 
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 1
+cuaic:BGR:1	Nominal - 
+	VDC("/VREF"):	Yield	0%
+		Min 0	Max 0	Mean 0	Number of errors 0
+
+cuaic:BGR:1
+	Overall Yield	0%	Number of points passed	0	Total number of points	0
+
+Estimated yield = 0% (0/0), 0 errors
+Estimated yield (No opregions) = 0% (0/0)
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 1
+cuaic:BGR:1	Nominal - 
+	VDC("/VREF"):	Yield	0%
+		Min 0	Max 0	Mean 0	Number of errors 0
+
+cuaic:BGR:1
+	Overall Yield	0%	Number of points passed	0	Total number of points	0
+
+Estimated yield = 0% (0/0), 0 errors
+Estimated yield (No opregions) = 0% (0/0)
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 1
+cuaic:BGR:1	Nominal - 
+	VDC("/VREF"):	Yield	100%
+		Min 0.00105233	Max 0.56382	Mean 0.511833	Number of errors 0
+
+cuaic:BGR:1
+	Overall Yield	100%	Number of points passed	200	Total number of points	200
+
+Estimated yield = 100% (200/200), 0 errors
+Estimated yield (No opregions) = 100% (200/200)
+Monte Carlo Sampling yield summary:
+Number of spec values are in this yield data: 1
+cuaic:BGR:1	Nominal - 
+	VDC("/VREF"):	Yield	100%
+		Min 0.00105233	Max 0.56382	Mean 0.511833	Number of errors 0
+
+cuaic:BGR:1
+	Overall Yield	100%	Number of points passed	200	Total number of points	200
+
+Estimated yield = 100% (200/200), 0 errors
+Estimated yield (No opregions) = 100% (200/200)
