@@ -121,7 +121,7 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 		<disabledtests>
@@ -159,358 +159,6 @@
 		</vars>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.126
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">cuaic:vga2:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:vga2:1_none_Interactive.126</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/vop") - VT("/von"))
-								<evalType>point</evalType>
-							</output>
-							<output>(VT("/vip") - VT("/vin"))
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/VREF")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/vref")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/vcm")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/I0/vref")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/I0/vcm")
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">cuaic:vga2:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:vga2:2_none_Interactive.126</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>cuaic:vga2:2</test>
-				</disabledtests>
-				<vars>
-					<var enabled="0">L
-						<value>1u:0.1u:2u</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDS
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VGS
-						<value>1.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W
-						<value>10u</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 09:52:28 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.126.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.126.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_095228782</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/vga2/adexl/results/data/Interactive.126</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/vga2/adexl/results/data/Interactive.126</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.126.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.126.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.127
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">cuaic:vga2:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:vga2:1_none_Interactive.127</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/vop") - VT("/von"))
-								<evalType>point</evalType>
-							</output>
-							<output>(VT("/vip") - VT("/vin"))
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/VREF")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/vref")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/vcm")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/I0/vref")
-								<evalType>point</evalType>
-							</output>
-							<output>VF("/I0/vcm")
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">cuaic:vga2:2
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:vga2:2_none_Interactive.127</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>vga2</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>cuaic:vga2:2</test>
-				</disabledtests>
-				<vars>
-					<var enabled="0">L
-						<value>1u:0.1u:2u</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDS
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VGS
-						<value>1.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W
-						<value>10u</value>
-						<dependentTests>
-							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
-							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 09:52:56 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.127.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.127.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_095257070</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/vga2/adexl/results/data/Interactive.127</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/vga2/adexl/results/data/Interactive.127</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.127.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.127.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.128
 			<checkpoint>
 				<corners>
@@ -633,7 +281,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -671,8 +319,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:53:58 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:53:58 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.128.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.128.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -809,7 +456,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -847,8 +494,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:54:42 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:54:42 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.129.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.129.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -985,7 +631,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1023,8 +669,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:55:41 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:55:41 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.130.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.130.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1161,7 +806,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1199,8 +844,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:56:43 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:56:43 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.131.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.131.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1337,7 +981,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1375,8 +1019,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:57:42 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:57:42 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.132.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.132.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1513,7 +1156,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1551,8 +1194,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:58:10 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:58:10 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.133.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.133.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1689,7 +1331,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1727,8 +1369,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 09:59:13 2024
-</timestamp>
+			<timestamp>Sat Jan 6 09:59:13 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.134.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.134.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1865,7 +1506,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<disabledtests>
@@ -1903,8 +1544,7 @@
 				</vars>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 10:07:30 2024
-</timestamp>
+			<timestamp>Sat Jan 6 10:07:30 2024</timestamp>
 			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.135.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.135.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1916,6 +1556,357 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.135.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.135.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.136
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:vga2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:vga2:1_none_Interactive.136</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/vop") - VT("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/vip") - VT("/vin"))
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/vref")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/vcm")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/I0/vref")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/I0/vcm")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">cuaic:vga2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:vga2:2_none_Interactive.136</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:vga2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Jan 6 14:23:32 2024</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.136.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.136.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_142332774</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/vga2/adexl/results/data/Interactive.136</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/vga2/adexl/results/data/Interactive.136</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.136.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.136.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.137
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:vga2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:vga2:1_none_Interactive.137</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/vop") - VT("/von"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/vip") - VT("/vin"))
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/vref")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/vcm")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/I0/vref")
+								<evalType>point</evalType>
+							</output>
+							<output>VF("/I0/vcm")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">cuaic:vga2:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:vga2:2_none_Interactive.137</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>vga2</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>cuaic:vga2:2</test>
+				</disabledtests>
+				<vars>
+					<var enabled="0">L
+						<value>1u:0.1u:2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">cuaic:vga2:2</dependentTest>
+							<dependentTest omitted="0">cuaic:vga2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Jan  6 14:39:18 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.137.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.137.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_143919132</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/vga2/adexl/results/data/Interactive.137</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/vga2/adexl/results/data/Interactive.137</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/vga2/adexl/results/data/Interactive.137.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.137.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
