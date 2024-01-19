@@ -51,7 +51,7 @@
 					</option>
 				</origoptions>
 			</test>
-			<test>cuaic:constcurrent:2
+			<test enabled="1">cuaic:constcurrent:2
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -98,604 +98,16 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 		<vars></vars>
 		<disabledtests>
-			<test>cuaic:constcurrent:1</test>
+			<test>cuaic:constcurrent:2</test>
 		</disabledtests>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.26
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 20:55:30 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.26.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_205530431</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.26</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.26</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.26.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.27
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 20:59:01 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.27.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_205901432</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.27</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.27</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.27.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.28
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 20:59:26 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.28.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_205926765</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.28</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.28</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.28.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.29
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 20:59:55 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.29.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_205955339</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.29</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.29</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.29.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.30
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 21:00:58 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.30.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210058455</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.30</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.30</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.30.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.31
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.31</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 21:01:47 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.31.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210147183</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.31</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.31</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.31.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.32
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:constcurrent:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.32</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>constcurrent</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<vars></vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Jan  6 21:04:25 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.32.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210425282</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.32</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.32</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.32.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.33
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.55
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -729,7 +141,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.33</value>
+								<value>cuaic:constcurrent:1_none_Interactive.55</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -747,7 +159,7 @@
 							</option>
 						</origoptions>
 					</test>
-					<test>cuaic:constcurrent:2
+					<test enabled="1">cuaic:constcurrent:2
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -766,7 +178,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:2_none_Interactive.33</value>
+								<value>cuaic:constcurrent:2_none_Interactive.55</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -794,32 +206,32 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<vars></vars>
 				<disabledtests>
-					<test>cuaic:constcurrent:1</test>
+					<test>cuaic:constcurrent:2</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 21:05:25 2024
+			<timestamp>Fri Jan 19 08:14:27 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.33.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.55.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.55.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210525896</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.33</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.33</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_081427474</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.55</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.55</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.33.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.55.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.55.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.34
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.56
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -853,7 +265,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.34</value>
+								<value>cuaic:constcurrent:1_none_Interactive.56</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -871,7 +283,7 @@
 							</option>
 						</origoptions>
 					</test>
-					<test>cuaic:constcurrent:2
+					<test enabled="1">cuaic:constcurrent:2
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -890,7 +302,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:2_none_Interactive.34</value>
+								<value>cuaic:constcurrent:2_none_Interactive.56</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -918,32 +330,32 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<vars></vars>
 				<disabledtests>
-					<test>cuaic:constcurrent:1</test>
+					<test>cuaic:constcurrent:2</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 21:05:42 2024
+			<timestamp>Fri Jan 19 08:14:54 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.34.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.56.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.56.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210542099</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.34</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.34</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_081454445</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.56</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.56</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.34.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.56.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.56.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.35
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.57
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -977,7 +389,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:1_none_Interactive.35</value>
+								<value>cuaic:constcurrent:1_none_Interactive.57</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -995,7 +407,7 @@
 							</option>
 						</origoptions>
 					</test>
-					<test>cuaic:constcurrent:2
+					<test enabled="1">cuaic:constcurrent:2
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -1014,7 +426,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:constcurrent:2_none_Interactive.35</value>
+								<value>cuaic:constcurrent:2_none_Interactive.57</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1042,28 +454,896 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<vars></vars>
 				<disabledtests>
-					<test>cuaic:constcurrent:1</test>
+					<test>cuaic:constcurrent:2</test>
 				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jan  6 21:07:18 2024
+			<timestamp>Fri Jan 19 08:15:20 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.35.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_210718370</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.35</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.35</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_081520777</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.57</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.35.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.35.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.58
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:16:56 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_081656210</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.58</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:22:02 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082202178</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.60
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:22:33 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.60.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.60.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082233631</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.60</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.60</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.60.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.60.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.61
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.61</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.61</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:23:40 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.61.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.61.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082340251</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.61</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.61</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.61.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.61.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.62
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.62</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.62</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:24:25 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082425848</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.62</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.63
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.63</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.63</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:25:45 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082546032</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.63</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.64
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">cuaic:constcurrent:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:1_none_Interactive.64</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">cuaic:constcurrent:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:constcurrent:2_none_Interactive.64</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constcurrent</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars></vars>
+				<disabledtests>
+					<test>cuaic:constcurrent:2</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Jan 19 08:27:13 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_082713915</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/constcurrent/adexl/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/constcurrent/adexl/results/data/Interactive.64</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/constcurrent/adexl/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
