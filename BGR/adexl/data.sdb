@@ -3,6 +3,20 @@
 	<active>Active Setup
 		<corners>
 			<corner enabled="1">_default</corner>
+			<corner enabled="1">mintemp
+				<vars>
+					<var>temperature
+						<value>-40</value>
+					</var>
+				</vars>
+			</corner>
+			<corner enabled="1">maxtemp
+				<vars>
+					<var>temperature
+						<value>125</value>
+					</var>
+				</vars>
+			</corner>
 		</corners>
 		<extensions>
 			<extension>Parasitics
@@ -14,7 +28,7 @@
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>cuaic:BGR:1
+			<test enabled="1">cuaic:BGR:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -79,16 +93,16 @@
 			</plottingoption>
 		</plottingoptions>
 		<vars>
-			<var enabled="0">vdd
-				<value></value>
+			<var enabled="1">vdd
+				<value>1.08,1.2,1.32</value>
 				<dependentTests>
-					<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+					<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
 				</dependentTests>
 			</var>
-			<var enabled="0">corner
+			<var enabled="1">corner
 				<value>"tt","ss","ff","sf","fs"</value>
 				<dependentTests>
-					<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+					<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="0">sigma
@@ -105,13 +119,25 @@
 						<test>cuaic:BGR:1</test>
 						<type>Subcircuit</type>
 						<LCV>nch_mac</LCV>
-						<Instances>/M9, /M11, /M12, /M17</Instances>
+						<Instances>/M9, /M11, /M12</Instances>
 					</dutinstance>
 					<dutinstance>row1
 						<test>cuaic:BGR:1</test>
 						<type>Subcircuit</type>
 						<LCV>pch_mac</LCV>
 						<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+					</dutinstance>
+					<dutinstance>row2
+						<test>cuaic:BGR:1</test>
+						<type>Master</type>
+						<LCV>tsmcN65/nch_mac/spectre</LCV>
+						<Instances>/M15</Instances>
+					</dutinstance>
+					<dutinstance>row3
+						<test>cuaic:BGR:1</test>
+						<type>Master</type>
+						<LCV>tsmcN65/pch_mac/spectre</LCV>
+						<Instances>/M14, /M10, /M16</Instances>
 					</dutinstance>
 				</runoption>
 				<runoption>ignoreflag
@@ -121,7 +147,7 @@
 					<value>all</value>
 				</runoption>
 				<runoption>mcnumpoints
-					<value>400</value>
+					<value>200</value>
 				</runoption>
 				<runoption>mcnumbins
 					<value></value>
@@ -163,7 +189,7 @@
 		</runoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.220
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.373
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -197,7 +223,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.220</value>
+								<value>cuaic:BGR:1_none_Interactive.373</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -269,13 +295,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -285,7 +323,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -327,23 +365,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:43:30 2024
+			<timestamp>Sat Jan 20 17:17:29 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.220.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.220.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.373.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.373.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074330123</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.220</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.220</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_171729831</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.373</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.373</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.220.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.220.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.373.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.373.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.221
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.374
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -377,7 +415,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.221</value>
+								<value>cuaic:BGR:1_none_Interactive.374</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -449,13 +487,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -465,7 +515,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -507,23 +557,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:46:55 2024
+			<timestamp>Sat Jan 20 17:19:07 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.221.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.221.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.374.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.374.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074655418</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.221</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.221</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_171908040</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.374</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.374</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.221.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.221.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.374.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.374.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.222
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.0
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -535,7 +585,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test>cuaic:BGR:1
@@ -557,7 +607,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.222</value>
+								<value>cuaic:BGR:1_none_MonteCarlo.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -629,13 +679,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -645,7 +707,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -687,23 +749,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:47:12 2024
+			<timestamp>Sat Jan 20 17:23:00 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.222.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.222.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074712833</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.222</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.222</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_172300899</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.222.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.222.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.223
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.375
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -737,7 +799,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.223</value>
+								<value>cuaic:BGR:1_none_Interactive.375</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -809,13 +871,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -825,7 +899,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -867,23 +941,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:47:29 2024
+			<timestamp>Sat Jan 20 17:23:09 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.223.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.223.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.375.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.375.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074729535</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.223</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.223</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_172310038</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.375</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.375</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.223.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.223.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.375.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.375.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.224
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.376
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -917,7 +991,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.224</value>
+								<value>cuaic:BGR:1_none_Interactive.376</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -989,13 +1063,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -1005,7 +1091,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -1047,23 +1133,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:47:41 2024
+			<timestamp>Sat Jan 20 17:23:42 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.224.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.224.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.376.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.376.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074741668</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.224</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.224</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_172342181</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.376</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.376</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.224.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.224.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.376.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.376.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.225
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.377
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1097,7 +1183,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.225</value>
+								<value>cuaic:BGR:1_none_Interactive.377</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1169,13 +1255,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -1185,7 +1283,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -1227,23 +1325,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:48:10 2024
+			<timestamp>Sat Jan 20 17:25:23 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.225.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.225.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.377.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.377.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074810744</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.225</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.225</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_172523457</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.377</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.377</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.225.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.225.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.377.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.377.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.226
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.378
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1277,7 +1375,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.226</value>
+								<value>cuaic:BGR:1_none_Interactive.378</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1349,13 +1447,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -1365,7 +1475,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -1407,23 +1517,23 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:48:50 2024
+			<timestamp>Sat Jan 20 17:26:59 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.226.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.226.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.378.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.378.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074850654</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.226</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.226</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_172659483</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.378</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.378</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.226.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.226.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.378.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.378.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.227
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.379
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1457,7 +1567,205 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.227</value>
+								<value>cuaic:BGR:1_none_Interactive.379</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>BGR</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
+								<evalType>point</evalType>
+							</output>
+							<output>average(mag(VS("/VREF")))
+								<evalType>point</evalType>
+							</output>
+							<output>VDC("/VREF")
+								<evalType>point</evalType>
+							</output>
+							<output>average(VDC("/VREF"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<vars>
+					<var enabled="0">vdd
+						<value></value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">corner
+						<value>"tt","ss","ff","sf","fs"</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">sigma
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>nch_mac</LCV>
+								<Instances>/M9, /M11, /M12</Instances>
+							</dutinstance>
+							<dutinstance>row1
+								<test>cuaic:BGR:1</test>
+								<type>Subcircuit</type>
+								<LCV>pch_mac</LCV>
+								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>0</value>
+						</runoption>
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>0</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>yes</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sat Jan 20 17:29:07 2024
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.379.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.379.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_172907661</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.379</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.379</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.379.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.379.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>corner
+						<value>"tt"</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>cuaic:BGR:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>BGR</value>
+							</option>
+							<option>lib
+								<value>cuaic</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>cuaic:BGR:1_none_MonteCarlo.1</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1512,7 +1820,7 @@
 					<var enabled="0">corner
 						<value>"tt","ss","ff","sf","fs"</value>
 						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+							<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="0">sigma
@@ -1529,13 +1837,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -1545,7 +1865,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -1587,26 +1907,40 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:49:22 2024
+			<timestamp>Sat Jan 20 17:31:35 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.227.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.227.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074922070</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.227</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.227</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_173136020</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/MonteCarlo.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/MonteCarlo.1</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.227.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.227.log</runlogfile>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/MonteCarlo.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.228
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.380
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
+					<corner enabled="1">mintemp
+						<vars>
+							<var>temperature
+								<value>-40</value>
+							</var>
+						</vars>
+					</corner>
+					<corner enabled="1">maxtemp
+						<vars>
+							<var>temperature
+								<value>125</value>
+							</var>
+						</vars>
+					</corner>
 				</corners>
 				<extensions>
 					<extension>Parasitics
@@ -1618,7 +1952,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>cuaic:BGR:1
+					<test enabled="1">cuaic:BGR:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -1637,7 +1971,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>cuaic:BGR:1_none_Interactive.228</value>
+								<value>cuaic:BGR:1_none_Interactive.380</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1683,16 +2017,16 @@
 					</plottingoption>
 				</plottingoptions>
 				<vars>
-					<var enabled="0">vdd
-						<value></value>
+					<var enabled="1">vdd
+						<value>1.08,1.2,1.32</value>
 						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+							<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
-					<var enabled="0">corner
+					<var enabled="1">corner
 						<value>"tt","ss","ff","sf","fs"</value>
 						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
+							<dependentTest enabled="1" omitted="0">cuaic:BGR:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var enabled="0">sigma
@@ -1709,13 +2043,25 @@
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
+								<Instances>/M9, /M11, /M12</Instances>
 							</dutinstance>
 							<dutinstance>row1
 								<test>cuaic:BGR:1</test>
 								<type>Subcircuit</type>
 								<LCV>pch_mac</LCV>
 								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
+							</dutinstance>
+							<dutinstance>row2
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/nch_mac/spectre</LCV>
+								<Instances>/M15</Instances>
+							</dutinstance>
+							<dutinstance>row3
+								<test>cuaic:BGR:1</test>
+								<type>Master</type>
+								<LCV>tsmcN65/pch_mac/spectre</LCV>
+								<Instances>/M14, /M10, /M16</Instances>
 							</dutinstance>
 						</runoption>
 						<runoption>ignoreflag
@@ -1725,7 +2071,7 @@
 							<value>all</value>
 						</runoption>
 						<runoption>mcnumpoints
-							<value>400</value>
+							<value>200</value>
 						</runoption>
 						<runoption>mcnumbins
 							<value></value>
@@ -1767,200 +2113,29 @@
 				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Fri Jan 19 07:49:45 2024
+			<timestamp>Sat Jan 20 18:15:45 2024
 </timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.228.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.228.rdb</simresults>
+			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.380.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.380.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_074945413</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.228</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.228</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_181545500</localpsfdir>
+			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.380</psfdir>
+			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.380</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.228.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.228.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.229
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>cuaic:BGR:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>BGR</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>cuaic:BGR:1_none_Interactive.229</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>BGR</value>
-							</option>
-							<option>lib
-								<value>cuaic</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>ymax(mag((VF("/vcomp") / IF("/M3/D"))))
-								<evalType>point</evalType>
-							</output>
-							<output>average(mag(VS("/VREF")))
-								<evalType>point</evalType>
-							</output>
-							<output>VDC("/VREF")
-								<evalType>point</evalType>
-							</output>
-							<output>average(VDC("/VREF"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
+			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.380.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.380.log</runlogfile>
+			<schematicpoint>
 				<vars>
-					<var enabled="0">vdd
-						<value></value>
-						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
-						</dependentTests>
+					<var>vdd
+						<value>1.2</value>
 					</var>
-					<var enabled="0">corner
-						<value>"tt","ss","ff","sf","fs"</value>
-						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">sigma
-						<value>5</value>
-						<dependentTests>
-							<dependentTest enabled="0" omitted="0">cuaic:BGR:1</dependentTest>
-						</dependentTests>
+					<var>corner
+						<value>"tt"</value>
 					</var>
 				</vars>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>cuaic:BGR:1</test>
-								<type>Subcircuit</type>
-								<LCV>nch_mac</LCV>
-								<Instances>/M9, /M11, /M12, /M17</Instances>
-							</dutinstance>
-							<dutinstance>row1
-								<test>cuaic:BGR:1</test>
-								<type>Subcircuit</type>
-								<LCV>pch_mac</LCV>
-								<Instances>/M0, /M1, /M2, /M7, /M13</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>0</value>
-						</runoption>
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>400</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcStopMethod
-							<value>Significance Test</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>1</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>0</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dumpParamMode
-							<value>yes</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Jan 19 07:50:30 2024
-</timestamp>
-			<resultsname>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.229.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.229.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_075030265</localpsfdir>
-			<psfdir>/home/cadence/simulation/cuaic/BGR/adexl/results/data/Interactive.229</psfdir>
-			<simdir>$AXL_PROJECT_DIR/cuaic/BGR/adexl/results/data/Interactive.229</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/tsmc65nm/cuaic/cuaic/BGR/adexl/results/data/Interactive.229.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.229.log</runlogfile>
-			<schematicpoint></schematicpoint>
+			</schematicpoint>
 			<test>all</test>
 		</historyentry>
 	</history>

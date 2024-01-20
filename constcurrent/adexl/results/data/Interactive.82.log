@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 18:03:17 2024 
+Best design point: 1
+Design specs: 
+	cuaic:constcurrent:1	corner	mintemp - 
+	IDC("/Vidc/PLUS")		97.11u
+	cuaic:constcurrent:1	corner	maxtemp - 
+	IDC("/Vidc/PLUS")		99.64u
+	cuaic:constcurrent:1	corner	Nominal - 
+	IDC("/Vidc/PLUS")		99.14u
+Design parameters: 
+	vdd		1.08
+	CORNER		"tt"
+
+Interactive.82
+Number of points completed: 15
+Number of simulation errors: 0
+Interactive.82 completed. 
+Current time: Sat Jan 20 18:05:28 2024 

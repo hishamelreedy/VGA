@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 18:00:47 2024 
+Best design point: 1
+Design specs: 
+	cuaic:constcurrent:1	corner	Nominal - 
+	IDC("/Vidc/PLUS")		100.5u
+Design parameters: 
+	CORNER		"tt"
+
+Interactive.81
+Number of points completed: 5
+Number of simulation errors: 0
+Interactive.81 completed. 
+Current time: Sat Jan 20 18:00:59 2024 

@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      cadence
 HostName                       berkeley.localdomain
-ProcessIdentifier              1569
-ProcessCreationTime_UTC        1705665828
-ProcessCreationTime_Readable   Fri Jan 19 07:03:48 2024 EST
+ProcessIdentifier              1702
+ProcessCreationTime_UTC        1705780253
+ProcessCreationTime_Readable   Sat Jan 20 14:50:53 2024 EST
 AppIdentifier                  /usr/local/cadence/IC617/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       
 FilePathUsedToEditLock         /home/cadence/tsmc65nm/cuaic/cuaic/BGR/constraint/prop.cfg
-TimeEditLocked                 Fri Jan 19 07:07:37 2024 EST
+TimeEditLocked                 Sat Jan 20 15:12:22 2024 EST

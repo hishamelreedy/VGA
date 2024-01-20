@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 18:15:47 2024 
+Best design point: 1
+Design specs: 
+	cuaic:BGR:1	corner	mintemp - 
+	VDC("/VREF")		499.9m
+	cuaic:BGR:1	corner	maxtemp - 
+	VDC("/VREF")		497.3m
+	cuaic:BGR:1	corner	Nominal - 
+	VDC("/VREF")		500.4m
+Design parameters: 
+	vdd		1.08
+	corner		"tt"
+
+Interactive.380
+Number of points completed: 15
+Number of simulation errors: 0
+Interactive.380 completed. 
+Current time: Sat Jan 20 18:18:17 2024 
