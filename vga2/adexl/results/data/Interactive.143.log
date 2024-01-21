@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan  6 14:35:18 2024 
+Best design point: 1
+Design specs: 
+	cuaic:vga2:1	corner	Nominal - 
+Design parameters: 
+	VDS		600m
+	VGS		1.2
+	W		10u
+
+Interactive.143
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.143 completed. 
+Current time: Sat Jan  6 14:35:28 2024 

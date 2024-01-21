@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Dec 22 14:31:08 2023 
+Best design point: 1
+Design specs: 
+	cuaic:Assignment2_wilson_cm:1	corner	Nominal - 
+	R_OUT		Error	No
+	I_out_dc		399.2u
+	i_out_err		-205.1m
+Design parameters: 
+
+Interactive.125
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.125 completed. 
+Current time: Fri Dec 22 14:31:19 2023 

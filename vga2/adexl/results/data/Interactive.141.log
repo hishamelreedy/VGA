@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan  6 14:32:19 2024 
+Best design point: 1
+Design specs: 
+	AC_analysis	corner	Nominal - 
+	Transient	corner	Nominal - 
+Design parameters: 
+	VDS		600m
+	VGS		1.2
+	W		10u
+
+Interactive.141
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.141 completed. 
+Current time: Sat Jan  6 14:32:33 2024 

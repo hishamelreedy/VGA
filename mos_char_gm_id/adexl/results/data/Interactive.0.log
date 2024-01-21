@@ -1,0 +1,24 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Dec 15 19:06:08 2023 
+Best design point: 1
+Design specs: 
+	cuaic:mos_char_gm_id:1	corner	Nominal - 
+Design parameters: 
+	FIN		1
+	L		60n
+	L_T		280n
+	VDS		600m
+	VDS_T		1.25
+	VGS		800m
+	VGS_T		1.5
+	VSB		0
+	VSB_T		0
+	W_REF		2.5u
+	W_REF_T		2.5u
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Fri Dec 15 19:06:14 2023 

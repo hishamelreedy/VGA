@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Jan 19 14:23:02 2024 
+Best design point: 1
+Design specs: 
+	cuaic:Assignment2_mos_amp_matching:2	corner	Nominal - 
+Design parameters: 
+	VGS		800m
+	CI		80f
+	LI		5n
+	CL		78f
+	LL		5n
+
+Interactive.63
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.63 completed. 
+Current time: Fri Jan 19 14:23:08 2024 

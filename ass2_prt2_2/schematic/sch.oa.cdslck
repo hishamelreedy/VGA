@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      cadence
 HostName                       berkeley.localdomain
-ProcessIdentifier              7631
-ProcessCreationTime_UTC        1705435402
-ProcessCreationTime_Readable   Tue Jan 16 15:03:22 2024 EST
+ProcessIdentifier              1804
+ProcessCreationTime_UTC        1703255157
+ProcessCreationTime_Readable   Fri Dec 22 09:25:57 2023 EST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /home/cadence/tsmc65nm/cuaic/cuaic/ass2_prt2_2/schematic/sch.oa.cdslck.dirlck
-TimeEditLocked                 Tue Jan 16 15:04:01 2024 EST
+TimeEditLocked                 Sat Dec 23 11:56:47 2023 EST
