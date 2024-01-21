@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cadence
+HostName                       berkeley.localdomain
+ProcessIdentifier              1763
+ProcessCreationTime_UTC        1704374962
+ProcessCreationTime_Readable   Thu Jan  4 08:29:22 2024 EST
+AppIdentifier                  /usr/local/cadence/IC617/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/cadence/tsmc65/cuaic/Assignment2_mos_amp_matching/maestro/maestro.sdb
+TimeEditLocked                 Thu Jan  4 08:33:04 2024 EST

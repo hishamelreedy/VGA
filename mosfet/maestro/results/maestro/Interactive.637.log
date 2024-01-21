@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 14:06:23 2024 
+Best design point: 1
+Design specs: 
+	TB_DIFF_OPAMP	corner	Nominal - 
+	A_TELE_only		Error	No
+	A_CS_only		Error	No
+	A_TELE_CS		Error	No
+	A_OPAMP_CL		Error	No
+	V_tele_CM		606.9m
+	V_cs_CM		602.3m
+	Loop Gain Phase		Error	No
+	Loop Gain dB20		Error	No
+Design parameters: 
+
+Interactive.637
+Number of points completed: 1
+Number of simulation errors: 6
+Interactive.637 completed. 
+Current time: Sat Jan 20 14:06:32 2024 

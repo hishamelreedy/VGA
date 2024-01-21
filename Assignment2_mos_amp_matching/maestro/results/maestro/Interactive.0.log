@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Dec 29 02:55:45 2023 
+Best design point: 1
+Design specs: 
+	s-param	corner	Nominal - 
+	W_MAX		670.3G
+Design parameters: 
+	VGS		950m
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Fri Dec 29 02:55:53 2023 

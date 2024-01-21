@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 12:38:05 2024 
+Best design point: 1
+Design specs: 
+	Trans_Sin	corner	Nominal - 
+	THD_diff		5.939
+	THD_se		65.42
+Design parameters: 
+
+Interactive.630
+Number of points completed: 4
+Number of simulation errors: 0
+Interactive.630 completed. 
+Current time: Sat Jan 20 12:38:44 2024 

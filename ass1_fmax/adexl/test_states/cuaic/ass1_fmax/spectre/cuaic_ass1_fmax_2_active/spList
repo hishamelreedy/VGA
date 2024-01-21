@@ -1,0 +1,2 @@
+; Nov 30 18:47:38 2023
+((selectionObject probeColor ("y2" "drawing") fullName "/PORT3/MINUS" type terminal) (selectionObject probeColor ("y3" "drawing") fullName "/PORT3/PLUS" type terminal) (selectionObject probeColor ("y4" "drawing") fullName "/PORT2/MINUS" type terminal) (selectionObject probeColor ("y5" "drawing") fullName "/PORT2/PLUS" type terminal))

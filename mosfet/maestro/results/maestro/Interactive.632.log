@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Jan 20 13:19:46 2024 
+Best design point: 1
+Design specs: 
+	VGA_diff_stb	corner	Nominal - 
+	PhaseMargin_DM		18.76
+	A_CM_opamp		Error	No
+	CMRR		Error	No
+	v (/net040 /net041); ac dB20(V)		Error	No
+	VGA_comm_std	corner	Nominal - 
+Design parameters: 
+
+Interactive.632
+Number of points completed: 8
+Number of simulation errors: 13
+Interactive.632 completed. 
+Current time: Sat Jan 20 13:20:21 2024 
